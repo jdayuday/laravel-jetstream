@@ -1,0 +1,34 @@
+ <div class="mt-4">
+                <x-jet-label for="city" value="{{ __('City') }}" />
+                <x-jet-input id="city" class="block mt-1 w-full" type="text" name="city" :value="old('city')" required autofocus autocomplete="city" />
+            </div>
+    
+            <div class="mt-4">
+                <x-jet-label for="zip" value="{{ __('Zip code') }}" />
+                <x-jet-input id="zip" class="block mt-1 w-full" type="text" name="zip" :value="old('zip')" required autofocus autocomplete="zip" />
+            </div>
+
+
+            <div class="mt-4">
+                <x-jet-label for="country" value="{{ __('Country') }}" />
+                <x-jet-input id="country" class="block mt-1 w-full" type="text" name="country" :value="old('country')" required autofocus autocomplete="country" />
+            </div>
+
+
+
+            <div class="mt-4">
+                <x-jet-label for="birthdate" value="{{ __('Birthdate') }}" />
+                <x-jet-input id="birthdate" class="block mt-1 w-full" type="text" name="birthdate" :value="old('birthdate')" required autofocus autocomplete="birthdate" />
+            </div>
+
+
+            <div class="mt-4">
+                <x-jet-label for="phonenumber" value="{{ __('Phone Number') }}" />
+                <x-jet-input id="phonenumber" class="block mt-1 w-full" type="text" name="phonenumber" :value="old('phonenumber')" required autofocus autocomplete="phonenumber" />
+            </div>
+
+
+            <div class="mt-4">
+                <x-jet-label for="role" value="{{ __('Role') }}" />
+                <x-jet-input id="role" class="block mt-1 w-full" type="text" name="role" :value="old('role')" required autofocus autocomplete="role" />
+            </div>
