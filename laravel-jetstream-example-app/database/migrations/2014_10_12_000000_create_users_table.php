@@ -21,9 +21,9 @@ return new class extends Migration
             $table->string('zip');
             $table->string('country');
             $table->string('state');
-            $table->date('birthdate');
-            $table->string('phonenumber')->unique();
-            $table->string('role');
+            $table->date('birth_date');
+            $table->string('phone_no')->unique();
+            $table->enum('role',['admin','user']);
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
@@ -32,6 +32,11 @@ return new class extends Migration
             $table->string('profile_photo_path', 2048)->nullable();
             $table->timestamps();
         });
+
+
+    
+
+        
     }
 
     /**

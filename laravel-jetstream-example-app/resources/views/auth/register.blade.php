@@ -97,14 +97,14 @@
           
 
             <div class="mt-4">
-                <x-jet-label for="birthdate" value="{{ __('Birthdate') }}" />
-                <x-jet-input id="birthdate" class="block mt-1 w-full" type="date" name="birthdate" />
+                <x-jet-label for="birth_date" value="{{ __('Birthdate') }}" />
+                <x-jet-input id="birth_date" class="block mt-1 w-full" type="date" name="birth_date" />
             </div>
 
 
             <div class="mt-4">
-                <x-jet-label for="phonenumber" value="{{ __('Phone Number') }}" />
-                <x-jet-input id="phonenumber" class="block mt-1 w-full" type="text" name="phonenumber" maxlength="11" :value="old('phonenumber')" required autofocus autocomplete="phonenumber" />
+                <x-jet-label for="phone_no" value="{{ __('Phone Number') }}" />
+                <x-jet-input id="phone_no" class="block mt-1 w-full" type="text" name="phone_no" maxlength="11" :value="old('phone_no')" required autofocus autocomplete="phone_no" />
             </div>
 
 
