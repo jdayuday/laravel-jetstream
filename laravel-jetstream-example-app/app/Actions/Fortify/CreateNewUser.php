@@ -27,7 +27,7 @@ class CreateNewUser implements CreatesNewUsers
             'zip' => ['required', 'integer', 'min:4','max:4'],
             'country' => ['required', 'string', 'max:255'],
             'state' => ['required', 'string', 'max:255'],
-            'birth_date' => ['required', 'date', 'max:255'],
+            'birth_date' => ['required', 'date'],
             'phone_no' => ['required', 'string', 'min:11','max:11'],
             'role' => ['required', 'string', 'max:2'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
