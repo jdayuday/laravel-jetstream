@@ -23,8 +23,8 @@ class CreateNewUser implements CreatesNewUsers
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
             'address' => ['required', 'string', 'max:255'],
-            'city' => ['required', 'string', 'max:255'],
-            'zip' => ['required', 'string', 'min:4','max:4'],
+            'city' => 'required|regex:/^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$/',
+            'zip' => ['required', 'integer', 'min:4','max:4'],
             'country' => ['required', 'string', 'max:255'],
             'state' => ['required', 'string', 'max:255'],
             'birth_date' => ['required', 'date', 'max:255'],
